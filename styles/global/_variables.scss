@@ -1,0 +1,40 @@
+$white: #fff;
+$black: #000;
+$color-primary: #5FB4A2;
+$color-secondary: #203A4C;
+$color-tertiary: #33323D;
+$color-light-gray: #FAFAFA;
+$color-medium-gray: #EAEAEB;
+$color-error-red: #F43030;
+$color-base: $color-tertiary;
+
+$font-ibarra: "Ibarra Real Nova", serif;
+$font-public-sans: "Public Sans", serif;
+$font-primary: $font-ibarra; 
+
+// Transitions
+$trans-duration: 0.3s;
+$trans-ease: ease-in;
+$trans: all $trans-duration $trans-ease;
+
+// Breakpoints
+// You can convert these at http://pxtoem.com
+$bp-s: 20em; // 320px
+$bp-s-max: 29.938em; // 479px
+$bp-sw: 30em; // 480px
+$bp-m-s: 37.5em; // 600px
+$bp-sw-max: 47.938em; // 767px
+$bp-m: 48em; // 768px
+$bp-m-max: 59.938em; // 959px
+$bp-mw: 60em; // 960px
+$bp-mw-max: 71.188em; // 1139px 
+$bp-l: 75em; // 1200px
+$bp-l-max: 81.188em; // 1299px
+$bp-xl: 81.25em; // 1300px
+$bp-xxl: 1400px; // 1400px
+
+$container-size: 1080px; //1015 + 64
+$container-size-small: 60rem;
+$container-size-medium: 90rem;
+$container-size-large: 106.25rem;
+$grid-gutter: 2rem;

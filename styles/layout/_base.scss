@@ -1,0 +1,26 @@
+$container-size: 1080px; //1015 + 64
+$container-size-small: 60rem;
+$container-size-medium: 90rem;
+$container-size-large: 106.25rem;
+$grid-gutter: 2rem;
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: $grid-gutter;
+    padding-right: $grid-gutter; 
+
+    &.container--small {
+        max-width: $container-size-small;
+    }
+
+    &.container--medium {
+        max-width: $container-size-medium;
+    }
+
+    &.container--large {
+        max-width: $container-size-large;
+    } 
+}

@@ -1,0 +1,48 @@
+$white: #fff;
+$black: #000;
+$color-primary: #5FB4A2;
+$color-secondary: #203A4C; 
+$color-light-gray: #FAFAFA;
+$color-medium-gray: #EAEAEB;
+$color-error-red: #F43030;
+$color-tertiary: #33323D;
+$color-base: $color-tertiary;
+$font-public-sans: "Public Sans", serif;
+* {
+	color: $color-base;
+	font-family: $font-public-sans;
+}
+
+.visuallyhidden,
+.visually-hidden,
+.visuallyHidden,
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    width: 1px;
+	height: 1px;
+	transition: none;
+
+	&.focusable:focus {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: $color-primary;
+		color: $white;
+		overflow: visible;
+		clip: auto;
+		margin: 0;
+		width: 100%;
+		height: auto;
+		border: 1px dashed $white;
+		padding: 10px;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		z-index: 9001;
+	}
+}

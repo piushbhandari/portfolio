@@ -1,0 +1,47 @@
+$white: #fff;
+$black: #000;
+$color-primary: #5FB4A2;
+$color-secondary: #203A4C;
+$color-tertiary: #33323D;
+$color-light-gray: #FAFAFA;
+$color-medium-gray: #EAEAEB;
+$color-error-red: #F43030;
+$color-base: $color-tertiary;
+$trans-duration: 0.3s;
+$trans-ease: ease-in;
+$trans: all $trans-duration $trans-ease;
+
+.button {
+    //@include resetBtn;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: $trans;
+    padding: 17px 32px;
+    background: $color-secondary;
+    color: $white;
+    text-transform: uppercase;
+
+    &:hover, &:focus {
+        background: $color-primary;
+    }
+    &[disabled]
+    {
+        cursor: initial;
+        background: $color-medium-gray
+    }
+} 
+
+.button--black {
+    &:hover, &:focus {
+
+    }
+    &[disabled]
+    {
+        
+    }
+}
+.button--icon {
+
+}

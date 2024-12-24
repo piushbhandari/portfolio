@@ -1,0 +1,163 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Ibarra Real Nova", serif;
+}
+
+/* ================================================================
+   MIXINS
+   ================================================================ */
+/* 
+================================================================
+   REM Mixin
+   ================================================================ */
+/* ================================================================
+FIT IMAGE MIXIN
+
+- EXAMPLE:
+
+img {
+  @include fitImg;
+}
+================================================================ */
+/* ================================================================
+FIT IMAGE MIXIN
+
+- EXAMPLE:
+
+.bg-img {
+  @include bgImg;
+}
+================================================================ */
+/* ================================================================
+   CLEARFIX MIXIN
+
+   - EXAMPLE:
+
+   div {
+     @include clearfix;
+   }
+   ================================================================ */
+/* ================================================================
+RESET STYLES BUTTON MIXIN
+
+- EXAMPLE:
+
+button {
+  @include resetBtn;
+}
+================================================================ */
+/* ================================================================
+RESET STYLES LIST MIXIN
+
+- EXAMPLE:
+
+ul {
+  @include resetList;
+}
+================================================================ */
+/* ================================================================
+INPUT PLACEHOLDER MIXIN
+
+- EXAMPLE:
+
+input {
+  @include placeholder {
+    color: red;
+    opacity: 1;
+  }
+}
+================================================================ */
+/* ================================================================
+   PSUEDO MIXIN
+
+   - EXAMPLE:
+
+   div::after {
+     @include pseudo;
+     top: -1rem; left: -1rem;
+   }
+   ================================================================ */
+/* ================================================================
+   Breakpoint mixin
+   ================================================================ */
+/* ================================================================
+   CUSTOM
+   ================================================================ */
+* {
+  color: #33323D;
+  font-family: "Public Sans", serif;
+}
+
+.visuallyhidden,
+.visually-hidden,
+.visuallyHidden,
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  transition: none;
+}
+.visuallyhidden.focusable:focus,
+.visually-hidden.focusable:focus,
+.visuallyHidden.focusable:focus,
+.sr-only.focusable:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #5FB4A2;
+  color: #fff;
+  overflow: visible;
+  clip: auto;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  border: 1px dashed #fff;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 9001;
+}
+
+.button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  padding: 17px 32px;
+  background: #203A4C;
+  color: #fff;
+  text-transform: uppercase;
+}
+.button:hover, .button:focus {
+  background: #5FB4A2;
+}
+.button[disabled] {
+  cursor: initial;
+  background: #EAEAEB;
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.container.container--small {
+  max-width: 60rem;
+}
+.container.container--medium {
+  max-width: 90rem;
+}
+.container.container--large {
+  max-width: 106.25rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

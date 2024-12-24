@@ -2,14 +2,78 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piush Bhandari</title>
 </head>
 <body>
-    <header class="site-header"></header>
+    <div class="container">
+        <h1>heading 1</h1>
+        <h2>heading 2</h1>
+        <h3>heading 3</h1>
+        <h4>heading 4</h1>
+        <h5>heading 5</h1>
+        <h6>heading 6</h1>
+    </div>
+    <button class="button button--blue"> button 1</button>
+    <button class="button button--black"> button 2</button>
+    <button class="button button--black" disabled> button 2</button>
+    <button class="button button--black" disabled> button 2</button>
+
+    <header class="site-header">
+        <div class="container">
+            <a class="site-logo" href="/"> 
+                <img class="site-logo__img" loading="lazy"/>
+            </a>
+            <nav class="site-header__navigation">
+                <ul class="navigation-listing">
+                    <li class="navigation-listing__item">
+                        <a lass="navigation-listing__link" href="#featured">Featured</a>
+                    </li>
+                    <li class="navigation-listing__item">
+                        <a lass="navigation-listing__link" href="#projects">Projects</a>
+                    </li>
+                    <li class="navigation-listing__item">
+                        <a lass="navigation-listing__link" href="#contact">Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main class="site-main"></main>
-    <footer class="site-footer"></footer>
-    <script src="script.js"></script>
+    <footer class="site-footer">
+        <div class="container site-footer__wrapper">
+            <div class="site-footer__col">
+                <a href="/" class="site-footer__logo">
+                    <img loading="lazy" class="site-footer__logo-img"/>
+                </a>
+                <ul class="footer-navigation">
+                    <li class="footer-navigation__item">
+                        <a lass="footer-navigation__link" href="#featured">Featured</a>
+                    </li>
+                    <li class="footer-navigation__item">
+                        <a lass="footer-navigation__link" href="#projects">Projects</a>
+                    </li>
+                    <li class="footer-navigation__item">
+                        <a lass="footer-navigation__link" href="#contact">Contact me</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="social-listing">
+                <li class="social-listing">
+                    <a href="#github" class="social-listing__link">
+                        g
+                    </a>
+                    <a href="#linkedin" class="social-listing__link">
+                        l
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

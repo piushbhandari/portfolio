@@ -1,0 +1,145 @@
+// @use "sass:map"; 
+
+// @mixin floating-labels($position: top, $text-color: $color-invert, $padding: 2px 6px)
+// { 
+// 	position: relative;
+
+// 	input[type="text"],
+// 	input[type="tel"],
+// 	input[type="number"],
+// 	input[type="email"],
+// 	input[type="file"],
+// 	input[type="password"],
+// 	input[type^="date"],
+// 	textarea,
+// 	select {
+
+// 		&::placeholder {
+// 			opacity: 0;
+// 		}
+
+// 		+ label {
+// 			transition: $trans;
+// 			position: absolute; 
+// 			left: 0;
+// 			top: 50%;
+// 			transform: translateY(-50%);
+// 			padding: $padding; 
+// 			cursor: text;
+// 		} 
+
+// 		&:focus, &:not(:placeholder-shown)  {  
+// 			+ label {
+// 				top: 100%;   
+// 				color: $text-color;
+// 				transform: initial; 
+// 				font-size: 90%; 
+// 				font-weight: $fontWeight-bold;
+
+// 				// move the label under the input
+// 				@if $position == bottom { 
+// 					top: 100%;   
+// 				}
+
+// 				// move label to the top of the input
+// 				@else if $position == top { 
+// 					top: 0;
+// 				}
+// 			}
+// 		}
+// 	} 
+// }
+
+// // mixin helper for mega menu columns
+
+// @mixin renderColumns() {
+// 	@for $i from 1 through 12 {
+// 		@include breakpoint($bp-mw) {
+// 			.col-count-#{$i} {
+// 				column-count: #{$i};
+// 			}
+// 		}
+// 	}
+// }
+// @include renderColumns();
+
+// // mixin helper for margin/padding spacing. example:  mb-0 = margin-bottom: 0, pl-6 = padding-left: 16px
+// $sides: (
+//     all:"",
+//     vertical:"y",
+//     horizontal:"x",
+//     top:"t", 
+//     right:"r", 
+//     bottom:"b", 
+//     left:"l"
+// );
+
+// $spacer: 16px;
+// $spacers: (
+//   0: 0,
+//   1: $spacer * .25,
+//   2: $spacer * .5,
+//   3: $spacer,
+//   4: $spacer * 1.5,
+//   5: $spacer * 3,
+//   6: $spacer * 3.25,
+//   7: $spacer * 3.5,
+//   8: $spacer * 4,
+//   9: $spacer * 3.25,
+//   10: $spacer * 3.5,
+//   11: $spacer * 4,
+//   12: $spacer * 4.25,
+//   13: $spacer * 4.5,
+//   14: $spacer * 5,
+//   15: $spacer * 5.25,
+//   16: $spacer * 5.5,
+//   17: $spacer * 6,
+//   18: $spacer * 6.25,
+//   19: $spacer * 6.5,
+//   20: $spacer * 7,
+// );
+
+// @each $side, $sideValue in $sides {
+//     @each $space, $spaceValue in $spacers {
+//         @if($side == "all") {
+//             .p#{$sideValue}-#{$space} {
+//                 padding:$spaceValue;
+//             }
+
+//             .m#{$sideValue}-#{$space} {
+//                 margin:$spaceValue;
+//             }
+//         }
+//         @else if($side == "vertical"){
+//             .p#{$sideValue}-#{$space} {
+//                 padding-top:$spaceValue;
+//                 padding-bottom:$spaceValue;
+//             }
+
+//             .m#{$sideValue}-#{$space} {
+//                 margin-top:$spaceValue;
+//                 margin-bottom:$spaceValue;
+//             }
+//         }
+//         @else if ($side == "horizontal") {
+//             .p#{$sideValue}-#{$space} {
+//                 padding-left:$spaceValue;
+//                 padding-right:$spaceValue;
+//             }
+
+//             .m#{$sideValue}-#{$space} {
+//                 margin-left:$spaceValue;
+//                 margin-right:$spaceValue;
+//             }
+//         }
+//         @else {
+//             .p#{$sideValue}-#{$space} {
+//                 padding-#{$side}:$spaceValue;
+//             }
+
+//             .m#{$sideValue}-#{$space} {
+//                 margin-#{$side}:$spaceValue;
+//             }
+//         }
+//     }   
+// }
