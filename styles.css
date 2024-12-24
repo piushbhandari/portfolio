@@ -133,6 +133,10 @@ input {
   background: #203A4C;
   color: #fff;
   text-transform: uppercase;
+  min-width: 200px;
+}
+.button span {
+  color: #fff;
 }
 .button:hover, .button:focus {
   background: #5FB4A2;
@@ -140,8 +144,33 @@ input {
 .button[disabled] {
   cursor: initial;
   background: #EAEAEB;
+  outline: 1px solid #EAEAEB;
 }
 
+.button--black {
+  background: transparent;
+  color: #33323D;
+  outline: 1px solid #33323D;
+}
+.button--black:hover, .button--black:focus {
+  background: #33323D;
+  color: #fff;
+}
+.button--black[disabled] {
+  background: transparent;
+  outline: 1px solid #EAEAEB;
+}
+
+.button--icon {
+  position: relative;
+  padding-left: 80px;
+}
+.button--icon .button__svg {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 .container {
   width: 100%;
   max-width: 1080px;

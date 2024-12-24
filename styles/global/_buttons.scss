@@ -22,26 +22,46 @@ $trans: all $trans-duration $trans-ease;
     background: $color-secondary;
     color: $white;
     text-transform: uppercase;
+    min-width: 200px;
 
+    span {
+        color: $white;
+    }
     &:hover, &:focus {
         background: $color-primary;
     }
     &[disabled]
     {
         cursor: initial;
-        background: $color-medium-gray
+        background: $color-medium-gray;
+        outline: 1px solid $color-medium-gray;
     }
 } 
 
 .button--black {
+    background: transparent;
+    color: $color-base;
+    outline: 1px solid $color-base;
     &:hover, &:focus {
-
+        background: $color-base;
+        color: $white;
     }
     &[disabled]
     {
-        
+        background: transparent;
+        outline: 1px solid $color-medium-gray;
     }
 }
-.button--icon {
+.button--icon { 
+    position: relative;
+    padding-left: 80px;
+    .button__svg {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
 
+    .button__text { 
+    }
 }
